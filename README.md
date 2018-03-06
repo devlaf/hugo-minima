@@ -25,7 +25,7 @@ theme = "hugo-minima"
 [params]
   description = "My blog description"
   footer_text = "My footer text"
-  profile_img_path = "/img/my_profile_image.png"
+  profile_img_path = "img/my_profile_image.png"
   profile_name = "My Name"
   profile_location = "Boston, Massachusetts, USA"
 ```
