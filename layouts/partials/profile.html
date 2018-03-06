@@ -1,0 +1,20 @@
+<div id="profile-container">
+  <h2 class="sidebar-title">About Me</h2>
+
+  <dl class="profile-datablock">
+    <dt class="profile-img">
+      <img src="{{.Site.Params.profile_img_path}}" width="80" height="80" alt="My Photo">
+    </dt>
+    <dd class="profile-data">
+      <h3>{{.Site.Params.profile_name}}</h3>
+      <p>{{.Site.Params.profile_location}}</p>
+    </dd>
+    <ul style="clear:left; border-bottom:none; padding:0.5em 0 0;">
+      {{ range .Site.Pages }}
+        {{ if (eq .Type "about_entry") }}
+          <li>{{ .Content }}</li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </dl>
+</div>

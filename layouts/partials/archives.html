@@ -1,0 +1,7 @@
+<h2 class="sidebar-title">Archives</h2>
+
+<ul class="archive-list">
+  {{ range $name, $items := .Site.Taxonomies.categories }}
+    <li><a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize | lower  }}">{{ $name }}</a></li>
+  {{ end }}
+</ul>

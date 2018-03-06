@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" href="../../css/minima.css">
+
+{{ partial "header.html" . }}
+
+<div id="content">
+
+  <div id="main"><div id="main2">
+
+    {{ range first 5 (where .Data.Pages "Type" "posts").ByDate }}
+      {{ if ne .Title "Posts" }}
+        <h2 class="date-header">{{ .Date.Format "Mon, Jan 2, 2006" }}</h2>
+
+        <div class="post">
+          <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <div class="post-body">{{ .Content }}</div>
+        </div>
+      {{ end }}
+    {{ end }}
+
+  </div></div>
+
+  {{ partial "sidebar.html" . }}
+
+</div>
+
+{{ partial "footer.html" . }}

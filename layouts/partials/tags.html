@@ -1,0 +1,6 @@
+<h2 class="sidebar-title">Tags</h2>
+<p>
+  {{ range $name, $items := .Site.Taxonomies.tags }}
+    <a href="{{ $.Site.BaseURL }}tags/{{ $name | urlize | lower  }}">{{ $name }}, </a>
+  {{ end }}
+</p>

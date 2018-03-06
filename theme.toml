@@ -1,0 +1,13 @@
+name = "hugo minima"
+description = "Hugo theme based on the classic Blogger minima css layout"
+homepage = "https://github.com/devlaf/hugo-minima"
+tags = [minimal, blogger]
+features = []
+min_version = "0.35"
+
+[author]
+  name = "devlaf"
+
+[original]
+  name = "Douglas Bowman"
+  homepage = "www.stopdesign.com"

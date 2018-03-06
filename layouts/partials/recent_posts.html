@@ -1,0 +1,9 @@
+<h2 class="sidebar-title">Recent Posts</h2>
+
+<ul id="recently">
+  {{ range first 10 (where .Site.Pages "Type" "posts").ByDate }}
+    {{ if ne .Title "Posts" }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  {{ end }}
+</ul>
