@@ -9,7 +9,8 @@ Create a new empty hugo site (Instructions [here](https://gohugo.io/commands/hug
 
 **Step 2:** Navigate to the themes directory and clone this repo there.
 ```
-cd themes/git clone https://github.com/devlaf/hugo-minima
+cd themes/
+git clone https://github.com/devlaf/hugo-minima
 ```
 
 **Step 3:** Update your [site configuration file](https://gohugo.io/getting-started/configuration/) to target this theme
