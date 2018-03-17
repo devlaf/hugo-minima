@@ -6,7 +6,7 @@
 
   <div id="main"><div id="main2">
 
-    {{ range first 5 (where .Data.Pages "Type" "posts").ByDate }}
+    {{ range first 5 (where .Data.Pages "Type" "posts").ByDate.Reverse }}
       {{ if ne .Title "Posts" }}
         <h2 class="date-header">{{ .Date.Format "Mon, Jan 2, 2006" }}</h2>
 
