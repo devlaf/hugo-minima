@@ -3,7 +3,7 @@
 
   <dl class="profile-datablock">
     <dt class="profile-img">
-      <img src="{{.Site.Params.profile_img_path}}" width="80" height="80" alt="My Photo">
+    <img src="{{ $.Site.BaseURL }}{{ .Site.Params.profile_img_path }}" width="80" height="80" alt="My Photo">
     </dt>
     <dd class="profile-data">
       <h3>{{.Site.Params.profile_name}}</h3>
