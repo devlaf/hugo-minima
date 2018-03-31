@@ -13,6 +13,9 @@
         <div class="post">
           <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
           <div class="post-body">{{ .Summary }}</div>
+          {{ if .Truncated }}
+            <div class="post-body"> ... </div>
+          {{ end }}
         </div>
       {{ end }}
     {{ end }}
